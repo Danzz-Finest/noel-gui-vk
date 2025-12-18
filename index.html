@@ -61,6 +61,17 @@
         }
 
         #error-log { display: none; position: absolute; top: 0; left: 0; color: red; background: rgba(0,0,0,0.8); z-index: 999; padding: 10px; }
+    /* ===== FIX CANVAS DƯ Ở GÓC TRÁI ===== */
+    canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    canvas:first-of-type {
+        display: none;
+    }
+
     </style>
 </head>
 <body>
